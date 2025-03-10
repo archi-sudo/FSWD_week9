@@ -1,0 +1,118 @@
+.todo-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.todo-container:hover {
+  transform: scale(1.02);
+}
+
+.todo-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  width: 70%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+  background: #eef4ff;
+}
+
+.add-btn {
+  padding: 12px 18px;
+  margin-left: 10px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #163593);
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.empty-message {
+  color: #6b7280;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 12px 15px;
+  margin-top: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+}
+
+.task-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.remove-btn {
+  padding: 6px 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
